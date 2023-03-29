@@ -9,10 +9,10 @@ chatglm多gpu用deepspeed和
 <code>pip install -r requirements.txt</code>
 ## 包括两种方式多gpu运行： ##
 ### 1.deepspeed ###
-<code>torchrun --nproc_per_node=2 multi_gpu_fintune_belle.py \
-         --dataset_path data/alpaca \
-         --lora_rank 8 \
-         --per_device_train_batch_size 1 \
+<code>torchrun --nproc_per_node=2 multi_gpu_fintune_belle.py \\
+         --dataset_path data/alpaca \\
+         --lora_rank 8 \\
+         --per_device_train_batch_size 1 \\
          --gradient_accumulation_steps 1 \
          --save_steps 1000 \
          --save_total_limit 2 \
