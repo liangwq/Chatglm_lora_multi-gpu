@@ -53,11 +53,12 @@ chatglm多gpu用deepspeed和
 
 #### 准备数据 ####
 <div>
-python tokenize_dataset_rows.py \
-    --jsonl_path data/alpaca_data.jsonl \
-    --save_path data/alpaca \
-    --max_seq_length 200 \ 
+<code>python tokenize_dataset_rows_belle.py \\
+    --jsonl_path data/alpaca_data.jsonl \\
+    --save_path data/alpaca \\
+    --max_seq_length 200 \\ 
     --skip_overlength
+<\code>
 </div>
 
 #### 数据准备好后执行下面命令 ####
