@@ -58,7 +58,7 @@ chatglm多gpu用deepspeed和
     --save_path data/alpaca \\
     --max_seq_length 200 \\ 
     --skip_overlength
-<\code>
+</code>
 </div>
 
 #### 数据准备好后执行下面命令 ####
