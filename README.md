@@ -9,6 +9,20 @@ chatglm多gpu用deepspeed和
 <code>pip install -r requirements.txt</code>
 ## 包括两种方式多gpu运行： ##
 ### 1.deepspeed ###
+#### 数据处理 ####
+<div>给两份belle中文的self instruct数据
+1.0.5M版本：
+wget https://huggingface.co/datasets/BelleGroup/generated_train_0.5M_CN/resolve/main/Belle.train.json
+2.1M版本
+wget https://huggingface.co/datasets/BelleGroup/generated_train_1M_CN/resolve/main/belle_open_source_1M.train.json
+3.把两份数据合并成一份
+a.0.5M和1M数据字段有些不同，统一处理数据，用地下代码处理1M数据
+python process_belle_1M_data.py
+b.把两份文件合并成一份，命名为：Belle_0_1.train.json
+cat Belle.train.json Belle_1M.train.json>Belle_0_1.train.json
+</div>
+
+#### 数据准备好后执行下面命令 ####
 <code>torchrun --nproc_per_node=2 multi_gpu_fintune_belle.py \\
          --dataset_path data/alpaca \\
          --lora_rank 8 \\
@@ -27,6 +41,17 @@ chatglm多gpu用deepspeed和
 </code>
 
 ### 2.accelerate+deepspeed ### 
+
+#### 准备数据 ####
+<div>
+python tokenize_dataset_rows.py \
+    --jsonl_path data/alpaca_data.jsonl \
+    --save_path data/alpaca \
+    --max_seq_length 200 \ 
+    --skip_overlength
+</div>
+
+#### 数据准备好后执行下面命令 ####
 <code>accelerate launch --config_file accelerate_ds_zero3_cpu_offload_config.yaml  multi_gpu_fintune_belle.py \\
                   --dataset_path data/alpaca  \\
                   --lora_rank 8 \\
