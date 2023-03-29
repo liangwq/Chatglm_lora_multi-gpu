@@ -6,11 +6,10 @@ chatglm多gpu用deepspeed和
 2.**[知乎链接](https://zhuanlan.zhihu.com/p/617919855)**
 ### 迭代比较匆忙，空了我会重新整理 ###
 ## 初始化环境 ##
-pip install -r requirements.txt
+<code>pip install -r requirements.txt</code>
 ## 包括两种方式多gpu运行： ##
 ### 1.deepspeed ###
-<code>
-torchrun --nproc_per_node=2 multi_gpu_fintune_belle.py \
+<code>torchrun --nproc_per_node=2 multi_gpu_fintune_belle.py \
          --dataset_path data/alpaca \
          --lora_rank 8 \
          --per_device_train_batch_size 1 \
@@ -28,8 +27,7 @@ torchrun --nproc_per_node=2 multi_gpu_fintune_belle.py \
 </code>
 
 ### 2.accelerate+deepspeed ### 
-<code>
-accelerate launch --config_file accelerate_ds_zero3_cpu_offload_config.yaml  multi_gpu_fintune_belle.py \
+<code>accelerate launch --config_file accelerate_ds_zero3_cpu_offload_config.yaml  multi_gpu_fintune_belle.py \
                   --dataset_path data/alpaca  \
                   --lora_rank 8 \
                   --per_device_train_batch_size 2 \
