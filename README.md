@@ -31,7 +31,7 @@ chatglm多gpu用deepspeed和
 
          b.把两份文件合并成一份，命名为：Belle_0_1.train.json
 
-         cat Belle.train.json Belle_1M.train.json>Belle_0_1.train.json
+         cd data & cat Belle.train.json Belle_1M.train.json>Belle_0_1.train.json
 </div>
 
 #### 数据准备好后执行下面命令 ####
