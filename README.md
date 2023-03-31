@@ -104,7 +104,8 @@ batch inference成为必要
 <div>python chatglm_milti_gpu_inference.py</code>
 
 如果也想用deepspeed加速，把以下注释代码去掉：
-<code># init deepspeed inference engine
+<div>
+     # init deepspeed inference engine
 '''ds_model = deepspeed.init_inference(
     model=model,      # Transformers models
     mp_size=8,        # Number of GPU
