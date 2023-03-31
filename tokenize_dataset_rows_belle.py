@@ -1,6 +1,7 @@
 import argparse
 import json
 from tqdm import tqdm
+import ast
 
 import datasets
 import transformers
@@ -30,7 +31,7 @@ def read_jsonl(path, max_seq_length, skip_overlength=False):
         model_name, cache_dir ='./', trust_remote_code=True, device_map='auto')
     with open(path, "r") as f:
         for line in tqdm(f.readlines()):
-            example = json.loads(line)
+            example = ast.literal_eval(line)
             feature = preprocess(tokenizer,config, example, max_seq_length)
             if skip_overlength and len(feature["input_ids"]) > max_seq_length:
                 continue

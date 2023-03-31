@@ -7,7 +7,48 @@ chatglm多gpu用deepspeed和
 ### 迭代比较匆忙，空了我会重新整理 ###
 ## 初始化环境 ##
 <code>pip install -r requirements.txt</code>
-## 包括两种方式多gpu运行： ##
+## 包括3种方式多gpu运行： ##
+### 0 最简单的多gpu运行，能跑通的单机脚本+deepspeed的配置文件就可以 ###
+<div>
+  单机执行命令
+<code>
+  python finetune.py \
+    --dataset_path data/alpaca \
+    --lora_rank 8 \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 1 \
+    --max_steps 2000 \
+    --save_steps 1000 \
+    --save_total_limit 2 \
+    --learning_rate 2e-5 \
+    --fp16 \
+    --remove_unused_columns false \
+    --logging_steps 50 \
+    --output_dir output
+  </code>
+</div>
+
+<div>
+  多Gpu执行命令
+  <code>
+    torchrun --nproc_per_node=2 multi_gpu_fintune_belle.py  \
+             --dataset_path data/alpaca  \
+             --lora_rank 8 \
+             --per_device_train_batch_size 1 \
+             --gradient_accumulation_steps 1 \
+              --save_steps 2000 \
+              --save_total_limit 2 \
+              --learning_rate 2e-5 \
+              --fp16 \
+              --num_train_epochs 2 \
+              --remove_unused_columns false \
+              --logging_steps 50 \
+              --gradient_accumulation_steps 2 \
+              --output_dir output \
+              --deepspeed ds_config_zero3.json
+  </code>
+</div>
+
 ### 1.deepspeed ###
 #### 数据处理 ####
 <div>给两份belle中文的self instruct数据
@@ -51,6 +92,7 @@ chatglm多gpu用deepspeed和
          --output_dir output \\
          --deepspeed ds_config_zero3.json
 </code>
+
 
 ### 2.accelerate+deepspeed ### 
 
