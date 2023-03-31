@@ -114,7 +114,6 @@ batch inference成为必要
 )
 print(f"model is loaded on device {ds_model.module.device}")'''
 </div>
-
 <code>deepspeed --num_gpus 2 chatglm_milti_gpu_inference.py</code>
 
 
