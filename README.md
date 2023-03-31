@@ -101,7 +101,7 @@ batch inference成为必要
 
 2.显卡资源不足以装下大模型，可以用accelerate.load_checkpoint_and_dispatch：
 
-<code>python chatglm_milti_gpu_inference.py</code>
+<div>python chatglm_milti_gpu_inference.py</code>
 
 如果也想用deepspeed加速，把以下注释代码去掉：
 <code># init deepspeed inference engine
@@ -113,7 +113,7 @@ batch inference成为必要
     replace_with_kernel_inject=True, # replace the model with the kernel injector
 )
 print(f"model is loaded on device {ds_model.module.device}")'''
-</code>
+</div>
 
 <code>deepspeed --num_gpus 2 chatglm_milti_gpu_inference.py</code>
 
