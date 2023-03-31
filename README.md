@@ -88,3 +88,34 @@ wget https://huggingface.co/datasets/BelleGroup/generated_train_0.5M_CN/resolve/
 </code>
 
 ### 3.ddp方式还没试 ###
+
+## batch inference ##
+
+实际工作中常常会出现，需要批量不数据预测出来问题
+
+往往我们有一台高性能的机器，但是如果做fintune，只能一张卡一个时间面对一个请求，造成显卡存资源浪费
+
+batch inference成为必要
+
+1.deepspeed --num_gpus 2 chatglm_deepspeed_inference.py
+
+2.显卡资源不足以装下大模型，可以用accelerate.load_checkpoint_and_dispatch：
+
+python chatglm_milti_gpu_inference.py
+
+如果也想用deepspeed加速，把以下注释代码去掉：
+<code># init deepspeed inference engine
+'''ds_model = deepspeed.init_inference(
+    model=model,      # Transformers models
+    mp_size=8,        # Number of GPU
+    dtype=torch.float16, # dtype of the weights (fp16)
+    replace_method="auto", # Lets DS autmatically identify the layer to replace
+    replace_with_kernel_inject=True, # replace the model with the kernel injector
+)
+print(f"model is loaded on device {ds_model.module.device}")'''
+</code>
+
+deepspeed --num_gpus 2 chatglm_milti_gpu_inference.py
+
+
+
