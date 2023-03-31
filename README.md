@@ -97,11 +97,11 @@ wget https://huggingface.co/datasets/BelleGroup/generated_train_0.5M_CN/resolve/
 
 batch inference成为必要
 
-1.deepspeed --num_gpus 2 chatglm_deepspeed_inference.py
+1.<code>deepspeed --num_gpus 2 chatglm_deepspeed_inference.py</code>
 
 2.显卡资源不足以装下大模型，可以用accelerate.load_checkpoint_and_dispatch：
 
-python chatglm_milti_gpu_inference.py
+<code>python chatglm_milti_gpu_inference.py</code>
 
 如果也想用deepspeed加速，把以下注释代码去掉：
 <code># init deepspeed inference engine
@@ -115,7 +115,7 @@ python chatglm_milti_gpu_inference.py
 print(f"model is loaded on device {ds_model.module.device}")'''
 </code>
 
-deepspeed --num_gpus 2 chatglm_milti_gpu_inference.py
+<code>deepspeed --num_gpus 2 chatglm_milti_gpu_inference.py</code>
 
 
 
