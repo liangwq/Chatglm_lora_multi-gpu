@@ -105,7 +105,7 @@ batch inference成为必要
 
 如果也想用deepspeed加速，把以下注释代码去掉：
 <div>
-         # init deepspeed inference engine
+         <code># init deepspeed inference engine
 '''ds_model = deepspeed.init_inference(
     model=model,      # Transformers models
     mp_size=8,        # Number of GPU
@@ -113,7 +113,7 @@ batch inference成为必要
     replace_method="auto", # Lets DS autmatically identify the layer to replace
     replace_with_kernel_inject=True, # replace the model with the kernel injector
 )
-print(f"model is loaded on device {ds_model.module.device}")'''
+                  print(f"model is loaded on device {ds_model.module.device}")'''</code>
          
 </div>
 <code>deepspeed --num_gpus 2 chatglm_milti_gpu_inference.py</code>
