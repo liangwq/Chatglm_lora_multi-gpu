@@ -24,6 +24,7 @@ chatglm多gpu用deepspeed和
     --fp16 \
     --remove_unused_columns false \
     --logging_steps 50 \
+    --report_to wandb
     --output_dir output
   </code>
 </div>
@@ -43,6 +44,7 @@ chatglm多gpu用deepspeed和
               --num_train_epochs 2 \
               --remove_unused_columns false \
               --logging_steps 50 \
+              --report_to wandb
               --gradient_accumulation_steps 2 \
               --output_dir output \
               --deepspeed ds_config_zero3.json
