@@ -169,5 +169,13 @@ batch inference成为必要
 
 <code> streamlit run web_feedback.py --server.port 6006 </code>
 
+## 新增chatglm作图应用 ##
+进入APP——example应用
+![image](https://user-images.githubusercontent.com/9170648/229363782-d3fa3f38-04d2-4fa7-8894-9749e1c5c6fa.png)
+
+
+![image](https://user-images.githubusercontent.com/9170648/229363770-9b07c09f-84df-47db-8a96-8956934c8c54.png)
+
+
 
 
