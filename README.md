@@ -162,5 +162,10 @@ batch inference成为必要
 </div>
 <code>deepspeed --num_gpus 2 chatglm_milti_gpu_inference.py</code>
 
+## webUI交互 ##
+进入webui文件夹，执行readme.txt命令即可
+
+<code> streamlit run web_feedback.py --server.port 6006 </code>
+
 
 
