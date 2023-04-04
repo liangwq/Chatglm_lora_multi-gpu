@@ -45,7 +45,6 @@ chatglm多gpu用deepspeed和
               --remove_unused_columns false \
               --logging_steps 50 \
               --report_to wandb
-              --gradient_accumulation_steps 2 \
               --output_dir output \
               --deepspeed ds_config_zero3.json
   </code>
