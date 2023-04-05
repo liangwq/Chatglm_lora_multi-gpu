@@ -18,7 +18,8 @@ import streamlit as st
 from peft import PeftModel, PeftConfig
 from peft import get_peft_model, LoraConfig, TaskType
 
-from transformers import AutoTokenizer
+from transformers import AutoTokenizer,AutoModel
+from tokenization_chatglm import ChatGLMTokenizer
 from modeling_chatglm import ChatGLMForConditionalGeneration
 
 DEFAULT_PROMPT = "border collie puppy"
@@ -214,7 +215,7 @@ if 'model' not in st.session_state:
             model, 
             peft_model_path
         )'''
-        tokenizer = AutoTokenizer.from_pretrained(
+        tokenizer = ChatGLMTokenizer.from_pretrained(
             "THUDM/chatglm-6b", 
             cache_dir ='./',
             trust_remote_code=True
