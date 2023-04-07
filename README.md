@@ -1,10 +1,9 @@
 # Chatglm_lora_multi-gpu
-chatglm多gpu用deepspeed和
 ## 大模型prompt&delta理论部分知识 ##
 1.**[CSDN链接](https://mp.csdn.net/mp_blog/creation/editor/129835450)**
 
 2.**[知乎链接](https://zhuanlan.zhihu.com/p/617919855)**
-### 迭代比较匆忙，空了我会重新整理 ###
+### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
 ## 初始化环境 ##
 <code>pip install -r requirements.txt</code>
 ## 包括3种方式多gpu运行： ##
