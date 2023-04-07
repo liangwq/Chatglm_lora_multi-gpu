@@ -178,6 +178,23 @@ batch inference成为必要
 
 ![7762BA98-AE3C-4D28-8CFD-8531A1C9209A](https://user-images.githubusercontent.com/9170648/229387742-35616814-3b60-43c4-9b5b-94be7720f0ab.png)
 
+## 利用自定义知识库约束，chatglm回复 ##
+进入APP——example应用 chat_langchain
+
+<code>pip install -r requirement.txt \n
+python knowledge_based_chatglm.py</code>
+
+<div>
+不带知识库回复：
+Q：世界上最大河流
+A："世界上最大的河流是尼罗河。尼罗河是非洲大陆最长的河流，全长约6650公里，发源于东非高原，流经苏丹、乌干达、肯尼亚、坦桑尼亚、卢旺达、刚果民主共和国、布隆迪和埃及，最终注入地中海。尼罗河流域是非洲最重要的农业地区之一，也是世界上最古老的文明之一埃及文明的发源地之一。"
+</div>
+
+带知识库回复
+基于本地知识搜索没有找到答案
+![image](https://user-images.githubusercontent.com/9170648/230585408-03a4a8a8-c6ff-4f73-94c1-4e7682f0608b.png)
+
+
 
 
 
