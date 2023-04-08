@@ -1,3 +1,3 @@
 
 ## 新增sd 的 lora效果控制 ##
-https://loc.dingtalk.com/L1VzZXJzL3FpYW4tbHdxL0xpYnJhcnkvQXBwbGljYXRpb24gU3VwcG9ydC9pRGluZ1RhbGsvMzQ2MzM3NDFfdjIvSW1hZ2VGaWxlcy8xNjgwOTYxMTY2Mzk3XzkwN0I4NjFGLTJBRkYtNEIxRS1CRjE4LUYzQkQ3MzNGQTI5Qy5wbmc=?renderWidth=768&renderHeight=512&renderOrientation=1&isLocal=1
+
