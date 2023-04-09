@@ -1,0 +1,28 @@
+## SafeTensor转成diffusion模型 #
+!git clone https://github.com/huggingface/diffusers.git
+%cd diffusers 
+!pip install -e .
+
+## 假设下载的模型是下面c站的5738 ##
+!wget https://civitai.com/api/download/models/5738?type=Model&format=SafeTensor
+! mv 5738 DuelComicMix.safetensors
+
+!python ./scripts/convert_original_stable_diffusion_to_diffusers.py --from_safetensors --checkpoint_path="DuelComicMix.safetensors" --dump_path='./dualc' --device='cuda:0'
+
+## 测试代码 ##
+<code>
+from diffusers import DiffusionPipeline
+pipeline = DiffusionPipeline.from_pretrained(
+    r"./diffusers/dualc"
+)
+pipeline.to("cuda")
+image = pipeline("A cute cat playing piano").images[0]
+image.save("image_of_cat_playing_piano1.png")
+</code>
+
+## Safetensors-2-Safetensors-or-Ckpt ##
+git clone https://github.com/pyDashNinja/Converter-Ckpt-or-Safetensors-2-Safetensors-or-Ckpt.git
+
+pip install torch safetensors argparse
+
+Python converter.py --file_path="/path/to/file/{filename}.safetensors" --type_format="ckpt" --suffix="ckpt"
