@@ -14,8 +14,7 @@ from tokenization_chatglm import ChatGLMTokenizer
 
 tokenizer = ChatGLMTokenizer.from_pretrained("THUDM/chatglm-6b",cache_dir ='./', trust_remote_code=True)
 
-#peft_model_id = 'mymusise/chatglm-6b-alpaca-lora'
-peft_model_id = '//mntnlp/qian.lwq/Chatglm_t/output/checkpoint-3000'
+peft_model_id = 'mymusise/chatglm-6b-alpaca-lora'
 peft_config = PeftConfig.from_pretrained(peft_model_id)
 
 # Load the Lora model

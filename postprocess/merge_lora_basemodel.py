@@ -116,7 +116,7 @@ for k, v in model_sd.items():
 
 import os
 import json
-output_dir = '../checkpoint-192000'
+output_dir = '../you out fold'
 os.makedirs(output_dir, exist_ok=True)
 
 torch.save(new_state_dict, output_dir + "/pytorch_model.bin")
