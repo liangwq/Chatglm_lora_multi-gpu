@@ -1,6 +1,6 @@
 # Chatglm_lora_multi-gpu
 ## 大模型prompt&delta理论部分知识 ##
-1.**[CSDN链接](https://mp.csdn.net/mp_blog/creation/editor/129835450)**
+1.**[CSDN链接](https://blog.csdn.net/liangwqi/article/details/129835450)**
 
 2.**[知乎链接](https://zhuanlan.zhihu.com/p/617919855)**
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
