@@ -60,7 +60,19 @@ dataset[3]["input_ids"]
 def collator(data):
     return dict((key, [d[key] for d in data]) for key in data[0])
 
+from trl import AutoModelForCausalLMWithValueHead,PPOConfig,PPOTrainer,set_seed
+Class ChatGLMForCausalLMWithValueHead(AutoModelForCausalLMWithValueHead):
+    transformers_parent_class = AutoModel
+    lm_head_namings = ["lm_head","embed_out"]
+    supported_args =("summary_dropout_prob",
+                     "v_head_initializer_range",
+                     "v_head_init_strategy",)
+    def __init__(self,pretrained_model,**kwargs):
+        super().__init__(pretrained_model,**kwargs)
+        self.is_peft_model = False
+
 #模型做ppo训练
+gpt2_model = ChatGLMForCausalLMWithValueHead.from_pretrained(gpt2_model,cache_dir = '.')
 ppo_trainer = PPOTrainer(config, gpt2_model, gpt2_model_ref, gpt2_tokenizer, dataset, data_collator=collator)
 
 
