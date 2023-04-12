@@ -1,3 +1,5 @@
+## 数据可以到huggingface数据集去下载 ##
+## 地址：https://huggingface.co/datasets/BelleGroup/train_1M_CN/tree/main ##
 给两份belle中文的self instruct数据
 1.0.5M版本：
 wget https://huggingface.co/datasets/BelleGroup/generated_train_0.5M_CN/resolve/main/Belle.train.json
