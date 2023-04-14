@@ -18,7 +18,7 @@ from accelerate import load_checkpoint_and_dispatch
 #加载数据
 df = pd.read_csv("yitu_origin.csv")
 df = pd.DataFrame(df)
-df.columns = ['title','content']
+df.columns = ['tittle','content']
 #数据加载到Dataloader，按批装载，batch_zise根据自己显卡大小改写，num_workers根据自己gpu卡数改写
 test_loader = DataLoader(dataset=df['tittle'] , batch_size=1, shuffle=False,num_workers=2)
 
