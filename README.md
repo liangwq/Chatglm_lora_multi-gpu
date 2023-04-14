@@ -200,10 +200,10 @@ A："世界上最大的河流是尼罗河。尼罗河是非洲大陆最长的河
 1.新增dreambooth lora训练方法
 2.多lora合并生成效果
 
-![Uploading webwxgetmsgimg (3).jpeg…]()
-![Uploading webwxgetmsgimg (2).jpeg…]()
-![Uploading webwxgetmsgimg (1).jpeg…]()
+![webwxgetmsgimg (3)](https://user-images.githubusercontent.com/9170648/232065892-35b018f6-2556-47f4-afd0-f6098cb1ba8c.jpeg)
 
+![webwxgetmsgimg (2)](https://user-images.githubusercontent.com/9170648/232065933-5cf56d06-78e8-4a1d-8f28-17f9a33fe912.jpeg)
 
+![webwxgetmsgimg (1)](https://user-images.githubusercontent.com/9170648/232065979-c4a88677-4daa-4c2a-be8c-bcaa49d38de4.jpeg)
 
 
