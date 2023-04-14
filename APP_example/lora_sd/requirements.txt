@@ -1,0 +1,12 @@
+torch
+torchvision
+peft
+datasets
+git+https://github.com/huggingface/accelerate
+git+https://github.com/huggingface/diffusers
+git+https://github.com/huggingface/transformers
+tqdm
+ftfy
+Pillow
+bitsandbytes
+gradio
