@@ -196,7 +196,13 @@ A："世界上最大的河流是尼罗河。尼罗河是非洲大陆最长的河
 ## 新增chatglm强化学习Alignment部分（RLHF） ##
 现在还比较naive，逐步会增加更实用更工业化的任务
 
+## 新增stablediffusion lora训练能力 ##
+1.新增dreambooth lora训练方法
+2.多lora合并生成效果
 
+![Uploading webwxgetmsgimg (3).jpeg…]()
+![Uploading webwxgetmsgimg (2).jpeg…]()
+![Uploading webwxgetmsgimg (1).jpeg…]()
 
 
 
