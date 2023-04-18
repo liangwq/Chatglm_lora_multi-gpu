@@ -203,4 +203,8 @@ A："世界上最大的河流是尼罗河。尼罗河是非洲大陆最长的河
 
 ![webwxgetmsgimg (1)](https://user-images.githubusercontent.com/9170648/232065979-c4a88677-4daa-4c2a-be8c-bcaa49d38de4.jpeg)
 
+## 预置内容 ##
+做了一个工具整合，后面会基于这个平台作更多开放
+
+
 
