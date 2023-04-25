@@ -196,8 +196,21 @@ A："世界上最大的河流是尼罗河。尼罗河是非洲大陆最长的河
 ## 新增chatglm强化学习Alignment部分（RLHF） ##
 现在还比较naive，逐步会增加更实用更工业化的任务
 
+## 新增stablediffusion lora训练能力 ##
+1.新增dreambooth lora训练方法
+2.多lora合并生成效果
+![webwxgetmsgimg (3)](https://user-images.githubusercontent.com/9170648/232065892-35b018f6-2556-47f4-afd0-f6098cb1ba8c.jpeg)
 
+![webwxgetmsgimg (1)](https://user-images.githubusercontent.com/9170648/232065979-c4a88677-4daa-4c2a-be8c-bcaa49d38de4.jpeg)
 
+## LLM_StableDiffusion_Studio ##
+做了一个工具整合，后面会整合更多能力，相信我们不会只做工具罗列的人
 
+https://github.com/liangwq/LLM_StableDiffusion_Studio
 
-
+![1620634258](https://user-images.githubusercontent.com/9170648/232819417-f016b1dc-874d-46a9-bdec-1490f7f3f24a.jpg)
+![webwxgetmsgimg (8)](https://user-images.githubusercontent.com/9170648/232819413-d4bde13a-9aac-4b8e-b62b-a4ae388563f8.jpeg)
+![webwxgetmsgimg (9)](https://user-images.githubusercontent.com/9170648/232819416-8918ae7f-7628-4b1c-855b-06e2f35e18e8.jpeg)
+![webwxgetmsgimg (10)](https://user-images.githubusercontent.com/9170648/232819414-4c5055c6-2d4b-4a2d-ab17-5256498d9bac.jpeg)
+![webwxgetmsgimg (11)](https://user-images.githubusercontent.com/9170648/232819411-1f9e4319-85b1-46f3-b5f6-5c9e70badeac.jpeg)
+![webwxgetmsgimg (12)](https://user-images.githubusercontent.com/9170648/232819412-9f7b117d-1c03-4e64-83cc-c7ed90de124f.jpeg)
