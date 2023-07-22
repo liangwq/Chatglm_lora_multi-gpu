@@ -214,3 +214,11 @@ https://github.com/liangwq/LLM_StableDiffusion_Studio
 ![webwxgetmsgimg (10)](https://user-images.githubusercontent.com/9170648/232819414-4c5055c6-2d4b-4a2d-ab17-5256498d9bac.jpeg)
 ![webwxgetmsgimg (11)](https://user-images.githubusercontent.com/9170648/232819411-1f9e4319-85b1-46f3-b5f6-5c9e70badeac.jpeg)
 ![webwxgetmsgimg (12)](https://user-images.githubusercontent.com/9170648/232819412-9f7b117d-1c03-4e64-83cc-c7ed90de124f.jpeg)
+
+## 新增chatglm实现agent的能力
+增加chtglm构建agent代码
+1.**[知乎链接]([https://blog.csdn.net/liangwqi/article/details/129835450](https://zhuanlan.zhihu.com/p/644167758))**
+增加向量检索tool
+1.**[知乎链接]([https://zhuanlan.zhihu.com/p/617919855](https://zhuanlan.zhihu.com/p/644619003))**
+![image](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/45a8d69d-d5b4-4e71-9027-c2eebfb79b5c)
+
