@@ -3,6 +3,14 @@
 1.**[CSDN链接](https://blog.csdn.net/liangwqi/article/details/129835450)**
 
 2.**[知乎链接](https://zhuanlan.zhihu.com/p/617919855)**
+
+## 语音学术助手理论部分 ##
+1.**[知乎链接](https://zhuanlan.zhihu.com/p/660753317)**
+
+2.**[知乎链接](https://zhuanlan.zhihu.com/p/661402008)**
+
+代码见APP_example/speech_assistant
+
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
 ## 初始化环境 ##
 <code>pip install -r requirements.txt</code>
