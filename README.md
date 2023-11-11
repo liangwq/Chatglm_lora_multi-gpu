@@ -9,7 +9,12 @@
 
 2.**[知乎链接](https://zhuanlan.zhihu.com/p/661402008)**
 
-代码见APP_example/speech_assistant
+## langchain keypoint理论部分 ##
+1.**[知乎链接](https://zhuanlan.zhihu.com/p/665132430)**
+
+2.**[知乎链接](https://zhuanlan.zhihu.com/p/665316441)**
+
+代码见APP_example/langchain_keypoint
 
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
 ## 初始化环境 ##
