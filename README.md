@@ -16,6 +16,8 @@
 
 代码见APP_example/langchain_keypoint
 
+![C3893346-9075-4140-B7C2-0377ABCF8459](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/42cdc4c4-ec86-4086-9395-97ed4b4a8c58)
+
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
 ## 初始化环境 ##
 <code>pip install -r requirements.txt</code>
