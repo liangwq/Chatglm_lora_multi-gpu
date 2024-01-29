@@ -29,6 +29,7 @@
 3.可视化应用界面：app.py
 </code>
 </div>
+
 ![clip_search00](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/93d5c672-39da-44cd-9ed3-12ac0c5a50c8)
 
 ![clip_searcg01](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/32f07e1b-70d3-4cfe-837d-707c7dac6195)
