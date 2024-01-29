@@ -22,11 +22,13 @@
 1.**[知乎链接](https://zhuanlan.zhihu.com/p/680405647)**
 
 代码见APP_example/clip_retrieval
+<div>
 <code>
 1.图片库特征抽取代码：extract_embeddings.py
 2.图片特征在faiss向量数据库建立索引：build_index.py
 3.可视化应用界面：app.py
 </code>
+</div>
 ![clip_search00](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/93d5c672-39da-44cd-9ed3-12ac0c5a50c8)
 
 ![clip_searcg01](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/32f07e1b-70d3-4cfe-837d-707c7dac6195)
