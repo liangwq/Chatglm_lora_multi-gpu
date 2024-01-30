@@ -30,9 +30,9 @@
 </code>
 </div>
 
-![clip_search00](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/93d5c672-39da-44cd-9ed3-12ac0c5a50c8)
+![clip_search00](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/e05c89aa-035c-453b-97bc-a1fa7827f7bb)
 
-![clip_searcg01](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/32f07e1b-70d3-4cfe-837d-707c7dac6195)
+![clip_searcg01](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/7e656cda-e414-4328-a0dd-4c226dcb0176)
 
 
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
