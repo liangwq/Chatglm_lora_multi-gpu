@@ -18,6 +18,23 @@
 
 ![C3893346-9075-4140-B7C2-0377ABCF8459](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/42cdc4c4-ec86-4086-9395-97ed4b4a8c58)
 
+## clip retrieval理论部分 ##
+1.**[知乎链接](https://zhuanlan.zhihu.com/p/680405647)**
+
+代码见APP_example/clip_retrieval
+<div>
+<code>
+1.图片库特征抽取代码：extract_embeddings.py
+2.图片特征在faiss向量数据库建立索引：build_index.py
+3.可视化应用界面：app.py
+</code>
+</div>
+
+![clip_search00](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/e05c89aa-035c-453b-97bc-a1fa7827f7bb)
+
+![clip_searcg01](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/7e656cda-e414-4328-a0dd-4c226dcb0176)
+
+
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
 ## 初始化环境 ##
 <code>pip install -r requirements.txt</code>
