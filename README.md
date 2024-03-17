@@ -34,6 +34,21 @@
 
 ![clip_searcg01](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/7e656cda-e414-4328-a0dd-4c226dcb0176)
 
+## retrieval inage generator理论部分 ##
+1.**[知乎链接](https://zhuanlan.zhihu.com/p/680822420)**
+
+代码见APP_example/retrieval_image_gen，如果直接启动需要24G左右显卡（没这么对显卡同学可以考虑api方式实现llm和image2image，clip检索显卡需求很低）
+<div>
+<code>
+1.整合最终效果代码：app_gradio.py
+2.图片image2image代码：upimage.py
+3.openaistyle访问qwen大模型：先启动服务端openai_api.py；在启动可视化界面 chatbot_st.py
+</code>
+</div>
+
+<img width="1264" alt="aigc-imag0" src="https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/37803193-7dfe-4f14-842c-d8feef01b9ca">
+
+<img width="1249" alt="aigc-img01" src="https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/cad425d2-4557-4337-a4ae-046096fd384e">
 
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
 ## 初始化环境 ##
