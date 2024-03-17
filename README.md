@@ -19,12 +19,12 @@
 ![C3893346-9075-4140-B7C2-0377ABCF8459](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/42cdc4c4-ec86-4086-9395-97ed4b4a8c58)
 
 ## real time draw ##
+代码见APP_example/real_time_draw
 ![9c6c0fad58b45cf76c51c601f5a75808 png](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/22f14bba-8608-4bd8-9247-4319ea947c50)
 <img width="1287" alt="A297A761-871C-46A3-83A5-3C46440550DD" src="https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/50e25b16-542e-4c32-a7c5-bc4d7f9113eb">
 
 ## clip retrieval理论部分 ##
 1.**[知乎链接](https://zhuanlan.zhihu.com/p/680405647)**
-
 代码见APP_example/clip_retrieval
 <div>
 <code>
