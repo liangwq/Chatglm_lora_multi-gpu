@@ -54,6 +54,18 @@
 
 <img width="1249" alt="aigc-img01" src="https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/cad425d2-4557-4337-a4ae-046096fd384e">
 
+## 带文字海报智能生成理论部分 ##
+1.**[知乎链接](https://zhuanlan.zhihu.com/p/680822420](https://zhuanlan.zhihu.com/p/695474810))**
+
+代码见APP_example/auto_poster，如果直接启动需要24G左右显卡.目前代码还之包括4个模块，模块间衔接需要人手动操作，下一个版本会做到自动化一键输入生成。
+<div>
+<code>
+1.生图模块 
+2.字排版模块 
+3.图文混合模块 
+4.图审核验证模块
+</code>
+</div>
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
 ## 初始化环境 ##
 <code>pip install -r requirements.txt</code>
