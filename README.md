@@ -66,6 +66,8 @@
 4.图审核验证模块
 </code>
 </div>
+![image](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/dee211e3-3efd-4838-8cb1-60b5e60de417)
+
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
 ## 初始化环境 ##
 <code>pip install -r requirements.txt</code>
