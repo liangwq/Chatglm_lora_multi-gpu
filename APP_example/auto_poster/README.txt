@@ -15,4 +15,5 @@ git clone https://huggingface.co/PixArt-alpha/pixart_sigma_sdxlvae_T5_diffusers 
 
 # PixArt-Sigma checkpoints
 python tools/download.py # environment eg. HF_ENDPOINT=https://hf-mirror.com can use for HuggingFace mirror
-
+3.启动模型后台
+python scripts/interface.py --model_path output/pretrained_models/PixArt-Sigma-XL-2-2k-MS.pth --image_size 2048 --port 6006
