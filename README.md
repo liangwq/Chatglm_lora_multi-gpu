@@ -66,7 +66,7 @@
 4.图审核验证模块
 </code>
 </div>
-![1714446649987-5dd9be43-cf4b-4c5c-9d3e-a12fd5f2fc82](https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/3a47650a-6047-4a8e-a4fa-de14dab73abb)
+<img width="1249" alt="aigc-img01" src="https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/3a47650a-6047-4a8e-a4fa-de14dab73abb">
 
 
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
