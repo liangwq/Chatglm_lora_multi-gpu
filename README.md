@@ -68,6 +68,26 @@
 </div>
 <img width="1249" alt="aigc-img01" src="https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/3a47650a-6047-4a8e-a4fa-de14dab73abb">
 
+## AI native数字人理论部分 ##
+1.**[知乎链接](https://zhuanlan.zhihu.com/p/707707817)**
+
+代码见APP_example/digital_human，有五个模块，每个模块可以顺序启动，启动一个运行完得到中间结果关闭然后运行下一个。
+<div>
+1.单图生成模块：使用上海人工智能研究所的Lumina架构进行图像生成。
+2.声音克隆模块：使用阿里通义的CosyVoice进行声音克隆。
+3.角色动作生成模块：使用MuseV进行角色动作生成。
+4.角色口型生成模块：使用MuseTalk进行角色口型生成。
+</div>
+
+
+
+https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/e91a7540-f87f-40bc-91a8-4e88887c5598
+
+
+https://github.com/liangwq/Chatglm_lora_multi-gpu/assets/9170648/bccbf5f0-a3af-488f-a625-cac7330dc9e1
+
+
+
 
 ### 以chatglm为引擎，逐步配置各种插件，拓展更多应用 ###
 ## 初始化环境 ##
